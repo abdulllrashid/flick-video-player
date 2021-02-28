@@ -77,7 +77,7 @@ class _FlickAutoPlayCircularProgressState
     if (_videoManager == null) {
       _videoManager = Provider.of<FlickVideoManager>(context);
       controller = AnimationController(
-          vsync: this, duration: _videoManager.nextVideoAutoPlayDuration);
+          duration: _videoManager.nextVideoAutoPlayDuration);
       controller.forward();
     }
     super.didChangeDependencies();
